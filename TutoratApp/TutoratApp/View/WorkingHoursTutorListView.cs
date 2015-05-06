@@ -19,9 +19,9 @@ namespace TutoratApp.Controller
 
         public void showToScreen()
         {
-            foreach (Tutor tutor in workingHoursList.GetAll())
+            foreach (KeyValuePair<Tutor,int> tutor in workingHoursList.GetAll())
             {
-                Console.WriteLine(tutor.ToString());
+                Console.WriteLine(tutor.Key.LastName + ", " + tutor.Key.FirstName + ", " + tutor.Key.EmailAdress + ", " + tutor.Value);
             }
         }
     }

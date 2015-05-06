@@ -26,9 +26,9 @@ namespace TutoratApp.ViewModel
             totalHours.Clear();
         }
 
-        public IEnumerable<Tutor> GetAll()
+        public Dictionary<Tutor, int> GetAll()
         {
-            return totalHours.Keys.AsEnumerable<Tutor>();
+            return totalHours;
         }
     }
 }

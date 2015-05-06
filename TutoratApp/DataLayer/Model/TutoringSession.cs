@@ -14,5 +14,10 @@ namespace DataLayer.Model
         //Foreign Keys
         public virtual int TutorID { get; set; }
         public virtual int HelpedID { get; set; }
+
+        public virtual HelpedStudent Helped { get; set; }
+
+        public virtual Tutor Tutor { get; set; }
+
     }
 }
