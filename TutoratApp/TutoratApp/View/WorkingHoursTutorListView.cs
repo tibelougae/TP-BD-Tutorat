@@ -21,7 +21,7 @@ namespace TutoratApp.Controller
         {
             foreach (KeyValuePair<Tutor,int> tutor in workingHoursList.GetAll())
             {
-                Console.WriteLine(tutor.Key.LastName + ", " + tutor.Key.FirstName + ", " + tutor.Key.EmailAdress + ", " + tutor.Value);
+                Console.WriteLine("Tuteur : " + tutor.Key.LastName + ", " + tutor.Key.FirstName + ", " + tutor.Key.EmailAdress + ", " + tutor.Value);
             }
         }
     }

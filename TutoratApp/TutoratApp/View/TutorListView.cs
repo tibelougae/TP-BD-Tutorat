@@ -22,7 +22,19 @@ namespace TutoratApp.View
         {
             foreach (Tutor tutor in tutorList.GetAll())
             {
-                Console.WriteLine(tutor.LastName + ", " + tutor.FirstName);
+                Console.WriteLine("Tuteur : " + tutor.LastName + ", " + tutor.FirstName + ", " + tutor.EmailAdress);
+            }
+        }
+
+        public void showAppointmentToScreen()
+        {
+            foreach (Tutor tutor in tutorList.GetAll())
+            {
+                Console.WriteLine("Tuteur : " + tutor.LastName + ", " + tutor.FirstName);
+                foreach (TutoringSession session in tutor.Sessions)
+                {
+                    Console.WriteLine("     Rencontre : " + session.DateSession + ", " + session.Helped.LastName + ", " + session.Helped.FirstName);
+                }
             }
         }
     }

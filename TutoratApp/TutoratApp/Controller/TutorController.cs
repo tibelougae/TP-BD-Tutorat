@@ -82,7 +82,7 @@ namespace TutoratApp.Controller
                 }
             }
             tutorViewPlanned = new TutorListView(tutorListPlanned);
-            tutorViewPlanned.showToScreen();
+            tutorViewPlanned.showAppointmentToScreen();
         }
 
         public void showAllTutorsWithoutSessionAt(DateTime date)
