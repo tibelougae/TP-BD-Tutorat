@@ -10,15 +10,17 @@ namespace TutoratApp.View
 {
     public class TutorListView
     {
-        private TutorListVM tutors;
+        public int Id { get; set; }
 
-        public TutorListView(TutorListVM _tutors)
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string EmailAddress { get; set; }
+
+        public string NameToString()
         {
-            tutors = _tutors;
-        }
-        public void showTutors()
-        {
-            tutors.showToScreen();
+            return LastName + ", " + FirstName;
         }
     }
 }

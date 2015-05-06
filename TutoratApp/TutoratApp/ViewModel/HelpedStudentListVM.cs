@@ -9,26 +9,17 @@ namespace TutoratApp.ViewModel
 {
     public class HelpedStudentListVM
     {
-         private List<HelpedStudent> helpedStudents = new List<HelpedStudent>();
+        public int Id { get; set; }
 
-        public void Add(HelpedStudent helpedStudent)
-        {
-            helpedStudents.Add(helpedStudent);
-        }
+        public string FirstName { get; set; }
 
-        public void Clear()
-        {
-            helpedStudents.Clear();
-        }
+        public string LastName { get; set; }
 
-        public void showHelpedStudent()
+        public string EmailAddress { get; set; }
+
+        public string ToString()
         {
-            foreach (HelpedStudent helpStudent in helpedStudents)
-            {
-                Console.WriteLine(helpStudent.LastName + ", "
-                        + helpStudent.FirstName + ", "
-                        + helpStudent.EmailAdress);
-            }
+            return "Aidé : " + LastName + ", " + FirstName + ", " + EmailAddress;
         }
     }
 }
