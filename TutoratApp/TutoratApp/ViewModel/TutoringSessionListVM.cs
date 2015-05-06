@@ -54,18 +54,17 @@ namespace TutoratApp.ViewModel
 
         public void showStudentsWithoutTutoring(EfEntityRepository<HelpedStudent> helpedStudents)
         {
-            var queryStudentsWithoutTutoring =
+            IQueryable<HelpedStudent> studentsWithoutTutoring = helpedStudents.GetAll();
+            var queryStudentsWithTutoring =
                 from session in tutoringSessions
-                group session by session.HelpedID into sessionGroup
-                where sessionGroup.Count() == 0
-                select sessionGroup;
+                join student in studentsWithoutTutoring on session.HelpedID equals student.Id into studentGroup
+                select session;
 
-            foreach (var queryResult in queryStudentsWithoutTutoring)
+            foreach (var queryResult in queryStudentsWithTutoring)
             {
-                foreach (TutoringSession session in queryResult)
-                {
-                    Console.WriteLine(helpedStudents.GetById(session.HelpedID).LastName + "," + helpedStudents.GetById(session.HelpedID).FirstName + "," + helpedStudents.GetById(session.HelpedID).EmailAdress);
-                }
+
+                Console.WriteLine(helpedStudents.GetById(queryResult.HelpedID).LastName + "," + helpedStudents.GetById(queryResult.HelpedID).FirstName + "," + helpedStudents.GetById(queryResult.HelpedID).EmailAdress);
+                
             }
         }
     }
