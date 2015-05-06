@@ -20,8 +20,8 @@ namespace TutoratApp.Controller
         private WorkingHoursTutorListVM workingHoursList;
         private WorkingHoursTutorListView workingHoursView;
 
-        private TutorListVM tutorListPlanned;
-        private TutorListView tutorViewPlanned;
+        private ScheduleTutorListVM tutorListPlanned;
+        private SessionScheduleByTutorView tutorViewPlanned;
 
         private TutorListVM tutorListDate;
         private TutorListView tutorViewDate;
@@ -31,7 +31,7 @@ namespace TutoratApp.Controller
             tutorsRepository = _repo;
             tutorList = new TutorListVM();
             workingHoursList = new WorkingHoursTutorListVM();
-            tutorListPlanned = new TutorListVM();
+            tutorListPlanned = new ScheduleTutorListVM();
             tutorListDate = new TutorListVM();
         }
         public void showAllTutors()
@@ -81,8 +81,8 @@ namespace TutoratApp.Controller
                     }
                 }
             }
-            tutorViewPlanned = new TutorListView(tutorListPlanned);
-            tutorViewPlanned.showAppointmentToScreen();
+            tutorViewPlanned = new SessionScheduleByTutorView(tutorListPlanned);
+            tutorViewPlanned.showToScreen();
         }
 
         public void showAllTutorsWithoutSessionAt(DateTime date)

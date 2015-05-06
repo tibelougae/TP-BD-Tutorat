@@ -51,6 +51,11 @@ namespace TutoratApp
             tutorController.showAllTutorsWithoutSessionAt(new DateTime(2015, 06, 02));
             Console.WriteLine("-------------------------------------------------------------");
 
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Appuyer sur une touche pour fermer");
             Console.ReadKey();
         }
     }
