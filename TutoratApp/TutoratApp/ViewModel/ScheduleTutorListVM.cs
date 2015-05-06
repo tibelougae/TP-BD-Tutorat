@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TutoratApp.ViewModel
 {
-    class ScheduleTutorListVM
+    public class ScheduleTutorListVM
     {
     }
 }

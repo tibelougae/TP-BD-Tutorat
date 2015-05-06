@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TutoratApp.View
 {
-    class SessionScheduleByTutorView
+    public class SessionScheduleByTutorView
     {
     }
 }

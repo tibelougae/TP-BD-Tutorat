@@ -7,14 +7,35 @@ using TutoratApp.ViewModel;
 using DataLayer;
 using DataLayer.Model;
 using DataLayer.EfEntityFramework;
+using TutoratApp.View;
 
 namespace TutoratApp.Controller
 {
-    class TutorController
+    public class TutorController
     {
-        public void Requete1()
+        private readonly IEntityRepository<Tutor> tutorsRepository;
+        private TutorListVM tutorList;
+        private TutorListView view;
+
+        public TutorController(IEntityRepository<Tutor> _repo)
         {
-            IEntityRepository<Tutor> monRepo;
+            tutorsRepository = _repo;
+            tutorList = new TutorListVM();
         }
+        public void showAllTutors()
+        {
+            IQueryable<Tutor> tutors = tutorsRepository.GetAll();
+            tutorList.Clear();
+
+            foreach (Tutor tutor in tutors)
+            {
+                tutorList.Add(tutor);
+            }
+
+            view = new TutorListView(tutorList);
+            view.showTutors();
+        }
+
+        
     }
 }

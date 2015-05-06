@@ -1,0 +1,14 @@
+C:\Users\Belouga\Documents\Visual Studio 2013\Projects\TutoratApp\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\DataLayer.dll.config
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\DataLayer.dll
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\DataLayer.pdb
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\EntityFramework.dll
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\System.Data.SqlServerCe.dll
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\EntityFramework.xml
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\obj\Debug\DataLayer.dll
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\obj\Debug\DataLayer.pdb
+C:\GitPrograms\TP-BD-Tutorat\TutoratApp\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache

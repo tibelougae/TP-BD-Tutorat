@@ -13,5 +13,7 @@ namespace DataLayer
         public DbSet<Tutor> Tutors { get; set; }
 
         public DbSet<HelpedStudent> HelpedStudent { get; set; }
+
+        public DbSet<TutoringSession> TutoringSessions { get; set; }
     }
 }

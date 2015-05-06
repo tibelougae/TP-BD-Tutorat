@@ -7,17 +7,27 @@ using DataLayer.Model;
 
 namespace TutoratApp.ViewModel
 {
-    class TutorListVM
+    public class TutorListVM
     {
-        public List<Tutor> tutors;
+        private List<Tutor> tutors = new List<Tutor>();
+
+        public void Add(Tutor tutor)
+        {
+            tutors.Add(tutor);
+        }
+
+        public void Clear()
+        {
+            tutors.Clear();
+        }
 
         public void showToScreen()
         {
-            for (int i = 0; i < tutors.Count<Tutor>(); i++)
+            foreach(Tutor tutor in tutors)
             {
-                Console.WriteLine(tutors.ElementAt<Tutor>(i).LastName + ", "
-                        + tutors.ElementAt<Tutor>(i).FirstName + ", "
-                        + tutors.ElementAt<Tutor>(i).EmailAdress);
+                Console.WriteLine(tutor.LastName + ", "
+                        + tutor.FirstName + ", "
+                        + tutor.EmailAdress);
             }
         }
     }

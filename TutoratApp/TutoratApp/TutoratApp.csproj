@@ -57,12 +57,18 @@
   <ItemGroup>
     <Compile Include="Controller\HelpedStudentController.cs" />
     <Compile Include="Controller\TutorController.cs" />
+    <Compile Include="Controller\TutoringSessionController.cs" />
+    <Compile Include="View\WorkingHoursTutorListView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\HelpedStudentListVM.cs" />
     <Compile Include="ViewModel\ScheduleTutorListVM.cs" />
+    <Compile Include="ViewModel\TutoringSessionListVM.cs" />
     <Compile Include="ViewModel\TutorListVM.cs" />
     <Compile Include="ViewModel\WorkingHoursTutorListVM.cs" />
+    <Compile Include="View\HelpedStudentListView.cs" />
     <Compile Include="View\SessionScheduleByTutorView.cs" />
+    <Compile Include="View\TutoringSessionListView.cs" />
     <Compile Include="View\TutorListView.cs" />
   </ItemGroup>
   <ItemGroup>
