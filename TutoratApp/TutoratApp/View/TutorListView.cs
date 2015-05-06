@@ -10,17 +10,20 @@ namespace TutoratApp.View
 {
     public class TutorListView
     {
-        public int Id { get; set; }
+        private TutorListVM tutorList;
 
-        public string FirstName { get; set; }
-
-        public string LastName { get; set; }
-
-        public string EmailAddress { get; set; }
-
-        public string NameToString()
+        public TutorListView(TutorListVM tutorList)
         {
-            return LastName + ", " + FirstName;
+            
+            this.tutorList = tutorList;
+        }
+
+        public void showToScreen()
+        {
+            foreach (Tutor tutor in tutorList.GetAll())
+            {
+                Console.WriteLine(tutor.ToString());
+            }
         }
     }
 }

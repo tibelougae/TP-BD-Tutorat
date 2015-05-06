@@ -10,23 +10,21 @@ namespace TutoratApp.ViewModel
 {
     public class TutoringSessionListVM
     {
-        public DateTime DateTimeSession { get; set; }
+        List<TutoringSession> sessionList = new List<TutoringSession>();
 
-        public string HelpedFirstName { get; set; }
-
-        public string HelpedLastName { get; set; }
-
-        public int Id { get; set; }
-
-        public int LenghtSession { get; set; }
-
-        public string TutorFirstName { get; set; }
-
-        public string TutorLastName { get; set; }
-
-        public string ToString()
+        public void Add(TutoringSession session)
         {
-            return DateTimeSession.ToString() + ", " + LenghtSession + " heure(s), " + HelpedLastName + " " + HelpedFirstName;
+            sessionList.Add(session);
+        }
+
+        public void Clear()
+        {
+            sessionList.Clear();
+        }
+
+        public IEnumerable<TutoringSession> GetAll()
+        {
+            return sessionList.AsEnumerable<TutoringSession>();
         }
     }
 }

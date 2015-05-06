@@ -21,20 +21,14 @@ namespace TutoratApp.ViewModel
             totalHours[tutor] += hour;
         }
 
-        public void showWorkingHours()
-        {
-            foreach (var tutor in totalHours)
-            {
-                Console.WriteLine(tutor.Key.LastName + ", "
-                        + tutor.Key.FirstName + ", "
-                        + tutor.Key.EmailAdress + ", "
-                        + tutor.Value);
-            }
-        }
-
         public void Clear()
         {
             totalHours.Clear();
+        }
+
+        public IEnumerable<Tutor> GetAll()
+        {
+            return totalHours.Keys.AsEnumerable<Tutor>();
         }
     }
 }

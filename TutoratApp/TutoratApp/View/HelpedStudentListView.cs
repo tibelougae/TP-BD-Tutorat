@@ -19,7 +19,10 @@ namespace TutoratApp.View
 
         public void showToScreen()
         {
-            helpedStudentList.showHelpedStudent();
+            foreach (HelpedStudent student in helpedStudentList.GetAll())
+            {
+                Console.WriteLine(student.ToString());
+            }
         }
     }
 }

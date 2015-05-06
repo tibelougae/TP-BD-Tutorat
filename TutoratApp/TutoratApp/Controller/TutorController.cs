@@ -33,7 +33,7 @@ namespace TutoratApp.Controller
             }
 
             view = new TutorListView(tutorList);
-            view.showTutors();
+            
         }
 
         

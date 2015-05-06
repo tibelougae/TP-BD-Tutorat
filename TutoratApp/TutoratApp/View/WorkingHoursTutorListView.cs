@@ -1,23 +1,28 @@
-﻿using System;
+﻿using DataLayer.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TutoratApp.ViewModel;
 
 namespace TutoratApp.Controller
 {
     class WorkingHoursTutorListView
     {
-        private ViewModel.WorkingHoursTutorListVM workingHoursList;
+        private WorkingHoursTutorListVM workingHoursList;
 
-        public WorkingHoursTutorListView(ViewModel.WorkingHoursTutorListVM workingHoursList)
+        public WorkingHoursTutorListView(WorkingHoursTutorListVM workingHoursList)
         {
             
             this.workingHoursList = workingHoursList;
         }
 
-        internal void showToScreen()
+        public void showToScreen()
         {
-            workingHoursList.showWorkingHours();
+            foreach (Tutor tutor in workingHoursList.GetAll())
+            {
+                Console.WriteLine(tutor.ToString());
+            }
         }
     }
 }

@@ -12,25 +12,20 @@ namespace TutoratApp.View
 {
     public class TutoringSessionListView
     {
-        private TutoringSessionListVM tutoringSessions;
+        private TutoringSessionListVM sessionList;
 
-        public TutoringSessionListView(TutoringSessionListVM _tutoringSession)
+        public TutoringSessionListView(TutoringSessionListVM sessionList)
         {
-            tutoringSessions = _tutoringSession;
-        }
-        public void showToScreen(EfEntityRepository<HelpedStudent> helpedStudents, EfEntityRepository<Tutor> tutors)
-        {
-            tutoringSessions.showTutoringSession(helpedStudents, tutors);
+            
+            this.sessionList = sessionList;
         }
 
-        public void showPlannedToScreen(EfEntityRepository<HelpedStudent> helpedStudents, EfEntityRepository<Tutor> tutors)
+        public void showToScreen()
         {
-            tutoringSessions.showPlannedTutoringSessions(helpedStudents, tutors);
-        }
-
-        public void showStudentWithoutTutoring(EfEntityRepository<HelpedStudent> helpedStudents)
-        {
-            tutoringSessions.showStudentsWithoutTutoring(helpedStudents);
+            foreach (TutoringSession session in sessionList.GetAll())
+            {
+                Console.WriteLine(session.ToString());
+            }
         }
     }
 }

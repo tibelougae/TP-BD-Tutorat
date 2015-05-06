@@ -17,3 +17,15 @@ C:\GitPrograms\TP-BD-Tutorat\TutoratApp\TutoratApp\obj\Debug\TutoratApp.pdb
 C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\TutoratApp.exe.config
 C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\obj\Debug\TutoratApp.exe
 C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\obj\Debug\TutoratApp.pdb
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\obj\Debug\TutoratApp.csprojResolveAssemblyReference.cache
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\TutoratApp.exe
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\TutoratApp.pdb
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\DataLayer.dll
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\EntityFramework.dll
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\System.Data.SqlServerCe.dll
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\DataLayer.pdb
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\EntityFramework.xml
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitHub projects\TP-BD-Tutorat\TutoratApp\TutoratApp\bin\Debug\EntityFramework.SqlServerCompact.xml

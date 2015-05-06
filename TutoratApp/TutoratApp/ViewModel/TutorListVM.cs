@@ -21,14 +21,9 @@ namespace TutoratApp.ViewModel
             tutors.Clear();
         }
 
-        public void showToScreen()
+        public IEnumerable<Tutor> GetAll()
         {
-            foreach(Tutor tutor in tutors)
-            {
-                Console.WriteLine(tutor.LastName + ", "
-                        + tutor.FirstName + ", "
-                        + tutor.EmailAdress);
-            }
+            return tutors.AsEnumerable<Tutor>();
         }
     }
 }

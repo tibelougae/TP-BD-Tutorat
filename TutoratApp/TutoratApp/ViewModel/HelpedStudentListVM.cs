@@ -9,17 +9,21 @@ namespace TutoratApp.ViewModel
 {
     public class HelpedStudentListVM
     {
-        public int Id { get; set; }
-
-        public string FirstName { get; set; }
-
-        public string LastName { get; set; }
-
-        public string EmailAddress { get; set; }
-
-        public string ToString()
+        List<HelpedStudent> studentList = new List<HelpedStudent>();
+ 
+        public void Add(HelpedStudent student)
         {
-            return "Aidé : " + LastName + ", " + FirstName + ", " + EmailAddress;
+            studentList.Add(student);
+        }
+
+        public void Clear()
+        {
+            studentList.Clear();
+        }
+
+        public IEnumerable<HelpedStudent> GetAll()
+        {
+            return studentList.AsEnumerable<HelpedStudent>();
         }
     }
 }

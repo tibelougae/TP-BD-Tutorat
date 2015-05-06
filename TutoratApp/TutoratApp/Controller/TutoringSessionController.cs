@@ -45,7 +45,7 @@ namespace TutoratApp.Controller
             }
 
             view = new TutoringSessionListView(tutoringSessionList);
-            view.showToScreen(helpedStudents, tutors);
+           // view.showToScreen(helpedStudents, tutors);
         }
 
         public void showAllTutoringSessionsWithHours(EfEntityRepository<Tutor> tutors)
@@ -76,7 +76,7 @@ namespace TutoratApp.Controller
                 }
             }
             viewPlanned = new TutoringSessionListView(tutoringSessionList);
-            viewPlanned.showPlannedToScreen(helpedStudents, tutors);
+           
         }
 
         public void showAllHelpedStudentsWithoutTutoring(EfEntityRepository<HelpedStudent> helpedStudents, EfEntityRepository<Tutor> tutors)
@@ -89,7 +89,7 @@ namespace TutoratApp.Controller
                 helpedStudentWithoutTutoringList.Add(tutoringSession);
             }
             helpedStudentWithoutTutoringView = new TutoringSessionListView(tutoringSessionList);
-            helpedStudentWithoutTutoringView.showStudentWithoutTutoring(helpedStudents);
+            
         }
     }
 }
