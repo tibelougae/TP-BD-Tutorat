@@ -16,10 +16,14 @@ namespace TutoratApp.Controller
         private HelpedStudentListVM helpedStudentList;
         private HelpedStudentListView view;
 
+        private HelpedStudentListVM helpedStudentWithoutTutoringList;
+        private HelpedStudentListView helpedStudentWithoutTutoringView;
+
         public HelpedStudentController(IEntityRepository<HelpedStudent> _repo)
         {
             helpedStudentsRepository = _repo;
             helpedStudentList = new HelpedStudentListVM();
+            helpedStudentWithoutTutoringList = new HelpedStudentListVM();
         }
         public void showAllHelpedStudents()
         {
@@ -33,6 +37,22 @@ namespace TutoratApp.Controller
 
             view = new HelpedStudentListView(helpedStudentList);
             view.showToScreen();
+        }
+
+        public void showAllHelpedStudentsWithoutTutoring()
+        {
+            IQueryable<HelpedStudent> helpedStudents = helpedStudentsRepository.GetAll();
+            helpedStudentWithoutTutoringList.Clear();
+
+            foreach (HelpedStudent helpedStudent in helpedStudents)
+            {
+                if ( helpedStudent.Sessions.Count() == 0)
+                {
+                    helpedStudentWithoutTutoringList.Add(helpedStudent);
+                }
+            }
+            helpedStudentWithoutTutoringView = new HelpedStudentListView(helpedStudentWithoutTutoringList);
+            helpedStudentWithoutTutoringView.showToScreen();
         }
     }
 }

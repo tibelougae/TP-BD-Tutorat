@@ -22,7 +22,7 @@ namespace TutoratApp.View
         {
             foreach (Tutor tutor in tutorList.GetAll())
             {
-                Console.WriteLine(tutor.ToString());
+                Console.WriteLine(tutor.LastName + ", " + tutor.FirstName);
             }
         }
     }

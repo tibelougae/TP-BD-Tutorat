@@ -21,7 +21,7 @@ namespace TutoratApp.View
         {
             foreach (HelpedStudent student in helpedStudentList.GetAll())
             {
-                Console.WriteLine(student.ToString());
+                Console.WriteLine(student.LastName + ", " + student.FirstName);
             }
         }
     }

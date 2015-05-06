@@ -32,19 +32,23 @@ namespace TutoratApp
 
             Console.WriteLine("B2 - liste session");
             TutoringSessionController sessionController = new TutoringSessionController(sessionRepository);
-            sessionController.showAllTutoringSessions(helpedStudentRepository, tutorRepository);
+            sessionController.showAllTutoringSessions();
             Console.WriteLine("-------------------------------------------------------------");
 
             Console.WriteLine("liste tuteur avec heure total");
-            sessionController.showAllTutoringSessionsWithHours(tutorRepository);
+            tutorController.showAllTutoringSessionsWithHours();
             Console.WriteLine("-------------------------------------------------------------");
 
             Console.WriteLine("liste tuteur avec heure total planifiée");
-            sessionController.showAllTutoringSessionsWithHoursPlanned(helpedStudentRepository, tutorRepository);
+            tutorController.showAllTutoringSessionsWithHoursPlanned();
             Console.WriteLine("-------------------------------------------------------------");
 
             Console.WriteLine("liste aidé sans tutorat");
-            sessionController.showAllHelpedStudentsWithoutTutoring(helpedStudentRepository, tutorRepository);
+            helpedController.showAllHelpedStudentsWithoutTutoring();
+            Console.WriteLine("-------------------------------------------------------------");
+
+            Console.WriteLine("liste aidé sans tutorat le 02 juin 2015");
+            tutorController.showAllTutorsWithoutSessionAt(new DateTime(2015, 06, 02));
             Console.WriteLine("-------------------------------------------------------------");
 
             Console.ReadKey();

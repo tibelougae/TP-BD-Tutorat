@@ -24,7 +24,7 @@ namespace TutoratApp.View
         {
             foreach (TutoringSession session in sessionList.GetAll())
             {
-                Console.WriteLine(session.ToString());
+                Console.WriteLine(session.DateSession + ", " + session.Tutor.LastName);
             }
         }
     }
